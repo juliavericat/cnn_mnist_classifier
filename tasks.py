@@ -13,7 +13,7 @@ def git(ctx: Context, message:str) -> None:
     """Simplifies the process of adding and committing changes with git."""
     ctx.run("git add .")
     ctx.run(f'git commit -m "{message}"')
-    ctx.run("git push")
+    ctx.run("git push origin main")
 
 @task
 def python(ctx: Context) -> None:
