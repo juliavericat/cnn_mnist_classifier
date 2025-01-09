@@ -9,6 +9,16 @@ PYTHON_VERSION = "3.11"
 # Setup Commands
 
 @task
+def add_new_data(ctx: Context, folder:str, message:str) -> None:
+    """Simplifies the process of adding new data to a dvc repository."""
+    ctx.run(f"dvc add {folder}")
+    ctx.run(f"git add {folder}.dvc .gitignore")
+    ctx.run(f'git commit -m "{message}"')    
+    ctx.run(f"git push")
+    ctx.run(f"dvc push")
+
+
+@task
 def git(ctx: Context, message:str) -> None:
     """Simplifies the process of adding and committing changes with git."""
     ctx.run("git add .")
