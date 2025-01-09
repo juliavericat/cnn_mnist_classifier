@@ -7,6 +7,19 @@ PROJECT_NAME = "cnn_mnist"
 PYTHON_VERSION = "3.11"
 
 # Setup commands
+
+@task
+def git(ctx: Context, message:str) -> None:
+    """Simplifies the process of adding and committing changes with git."""
+    ctx.run("git add .")
+    ctx.run(f'git commit -m "{message}"')
+    ctx.run("git push")
+
+@task
+def python(ctx: Context) -> None:
+    """Returns the current Python interpreter path."""
+    ctx.run("which python" if os.name != "nt" else "where python")
+
 @task
 def create_environment(ctx: Context) -> None:
     """Create a new conda environment for project."""
