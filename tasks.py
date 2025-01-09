@@ -13,7 +13,11 @@ def git(ctx: Context, message:str) -> None:
     """Simplifies the process of adding and committing changes with git."""
     ctx.run("git add .")
     ctx.run(f'git commit -m "{message}"')
-    ctx.run("git push origin main")
+    
+    # Current branch name
+    current_branch = ctx.run("git rev-parse --abbrev-ref HEAD", hide=True).stdout.strip()
+    
+    ctx.run(f"git push origin {current_branch}")
 
 @task
 def python(ctx: Context) -> None:
