@@ -6,7 +6,7 @@ WINDOWS = os.name == "nt"
 PROJECT_NAME = "cnn_mnist"
 PYTHON_VERSION = "3.11"
 
-# Setup commands
+# Setup Commands
 
 @task
 def git(ctx: Context, message:str) -> None:
