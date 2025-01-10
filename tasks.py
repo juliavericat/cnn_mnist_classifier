@@ -17,6 +17,15 @@ def add_new_data(ctx: Context, folder:str, message:str) -> None:
     ctx.run(f"git push")
     ctx.run(f"dvc push")
 
+@task
+def pull_data(ctx: Context) -> None:
+    """Download data from a dvc repository."""
+    ctx.run("dvc pull")
+
+@task(pull_data)
+def train(ctx: Context) -> None:
+    """Train model."""
+    ctx.run("my_cli train")
 
 @task
 def git(ctx: Context, message:str) -> None:
