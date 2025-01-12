@@ -1,7 +1,7 @@
 import torch
 import typer
 from data import corrupt_mnist
-from model import SimpleCNN
+from cnn_mnist.model_v1 import SimpleCNN
 from torch import nn
 
 

@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 import torch
 import typer
-from model import SimpleCNN
+from cnn_mnist.model_v1 import SimpleCNN
 from sklearn.decomposition import PCA
 from sklearn.manifold import TSNE
 
