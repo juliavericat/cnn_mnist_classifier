@@ -1,0 +1,18 @@
+program: src/cnn_mnist/train.py
+method: bayes
+name: sweepdemo
+project: cnn_mnist_classifier
+entity: juliavericatg-danmarks-tekniske-universitet-dtu
+metric:
+    goal: minimize
+    name: validation_loss
+parameters:
+    learning-rate:
+        min: 0.0001
+        max: 0.1
+        distribution: log_uniform_values
+    batch-size:
+        values: [64]
+    epochs:
+        values: [5]
+run_cap: 1

@@ -1,0 +1,154 @@
+{
+    "os": "Linux-6.8.0-51-generic-x86_64-with-glibc2.39",
+    "python": "CPython 3.10.16",
+    "heartbeatAt": "2025-01-14T11:51:52.599857",
+    "startedAt": "2025-01-14T11:51:50.595376",
+    "docker": null,
+    "args": [
+        "service",
+        "--debug",
+        "--port-filename",
+        "/tmp/tmp987t1slx/port-20566.txt",
+        "--pid",
+        "20566"
+    ],
+    "state": "running",
+    "program": "/home/jvg/Desktop/MLOps/W1/D2_Organisation_VersionControl/cnn_mnist_classifier/src/cnn_mnist/train.py",
+    "codePathLocal": "src/cnn_mnist/train.py",
+    "codePath": "src/cnn_mnist/train.py",
+    "git": {
+        "remote": "https://github.com/juliavericat/cnn_mnist_classifier.git",
+        "commit": "dfa5900eb6dec80bbd157b09095753c7c86c91bf"
+    },
+    "email": "s241981@dtu.dk",
+    "root": "/home/jvg/Desktop/MLOps/W1/D2_Organisation_VersionControl/cnn_mnist_classifier",
+    "host": "jvg-msi-gs66",
+    "username": null,
+    "executable": "/home/jvg/miniconda3/envs/mlops/bin/python",
+    "cpu_count": 14,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 895.5822000000001,
+        "min": 400.0,
+        "max": 4180.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1214.947,
+            "min": 400.0,
+            "max": 4600.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1175.835,
+            "min": 400.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1163.562,
+            "min": 400.0,
+            "max": 4600.0
+        },
+        {
+            "current": 399.787,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 629.109,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 879.873,
+            "min": 400.0,
+            "max": 4700.0
+        },
+        {
+            "current": 1203.444,
+            "min": 400.0,
+            "max": 4600.0
+        },
+        {
+            "current": 904.641,
+            "min": 400.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1300.0,
+            "min": 400.0,
+            "max": 4600.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4600.0
+        },
+        {
+            "current": 1300.021,
+            "min": 400.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1300.324,
+            "min": 400.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1300.309,
+            "min": 400.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1300.809,
+            "min": 400.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1300.55,
+            "min": 400.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1299.974,
+            "min": 400.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1237.67,
+            "min": 400.0,
+            "max": 3500.0
+        },
+        {
+            "current": 1300.188,
+            "min": 400.0,
+            "max": 3500.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 120351260672,
+            "used": 41601466368
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3070 Ti Laptop GPU",
+            "memory_total": 8589934592
+        }
+    ],
+    "memory": {
+        "total": 33336942592
+    }
+}

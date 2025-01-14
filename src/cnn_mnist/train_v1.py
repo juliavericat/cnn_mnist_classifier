@@ -1,7 +1,7 @@
 import torch
 import typer
 from data import corrupt_mnist
-from cnn_mnist.model_v1 import SimpleCNN
+from model_v1 import SimpleCNN
 from torch import nn, optim
 import matplotlib.pyplot as plt
 
@@ -10,10 +10,10 @@ app = typer.Typer()
 
 
 @app.command()
-def train(lr: float = 1e-3, epochs: int = 10, batch_size: int = 32) -> None:
+def train(learning_rate: float = 1e-3, epochs: int = 10, batch_size: int = 32) -> None:
     """Train a model on MNIST."""
     print("Training day and night")
-    print(lr)
+    print(learning_rate)
 
     # TODO: Implement training loop here
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
@@ -25,7 +25,7 @@ def train(lr: float = 1e-3, epochs: int = 10, batch_size: int = 32) -> None:
     )
 
     criterion = nn.CrossEntropyLoss()
-    optimizer = optim.Adam(model.parameters(), lr=lr)
+    optimizer = optim.Adam(model.parameters(), lr=learning_rate)
 
     train_losses, train_accuracies, train_steps = [], [], []
     step = 0
